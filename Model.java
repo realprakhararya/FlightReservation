@@ -34,9 +34,10 @@ public abstract class Model{
         return seatMatrix;
     }
 
-    public void setSeat(int row, int col) {
-        seatMatrix[row][col] = 1;
+    public void setSeat(int row, int col, int status) {
+        seatMatrix[row][col] = status;
     }
+
 
     public void clearSeat(int row, int col) {
         seatMatrix[row][col] = 0;
